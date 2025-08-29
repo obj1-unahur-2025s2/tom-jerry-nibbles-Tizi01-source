@@ -7,12 +7,12 @@ object tom {
     method velocidadMaxima() = velocidadMaxima
 
     method comerRaton(raton) {
-      energia = energia + (12 + raton.peso())
+      energia += (12 + raton.peso())
       return "Tom comió a" + raton
     }
 
     method correr(distancia) {
-      energia = energia - (distancia / 2)
+      energia -= (distancia / 2)
       return "Tom corrió una distancia de " + distancia + " metros"
     }
 
@@ -32,7 +32,7 @@ object jerry {
     var edad = 2
     method edad() = edad
     method cumpleEdad() {
-      edad = edad + 1
+      edad += 1
     }
 
     var distanciaRaton = 0
