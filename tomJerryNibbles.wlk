@@ -2,9 +2,7 @@
 object tom {
     var energia = 50
     method energia() = energia
-
-    var velocidadMaxima = 5 + (energia/10)
-    method velocidadMaxima() = velocidadMaxima
+    method velocidadMaxima() = 5 + (energia/10)
 
     method comerRaton(raton) {
       energia += (12 + raton.peso())
