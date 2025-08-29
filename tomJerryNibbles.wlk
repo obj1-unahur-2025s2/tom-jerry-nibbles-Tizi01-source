@@ -8,12 +8,12 @@ object tom {
 
     method comerRaton(raton) {
       energia += (12 + raton.peso())
-      return "Tom comió a" + raton
+      console "Tom comió a" + raton + "."
     }
 
     method correr(distancia) {
       energia -= (distancia / 2)
-      return "Tom corrió una distancia de " + distancia + " metros"
+      console "Tom corrió una distancia de " + distancia + " metros."
     }
 
     method puedeCazar(raton) {
@@ -35,7 +35,7 @@ object jerry {
       edad += 1
     }
 
-    var distanciaRaton = 0
+    var distanciaRaton = 30
     method distanciaRaton() = distanciaRaton
 
     method peso() = edad * 20
@@ -46,7 +46,7 @@ object nibbles {
 
     method peso() = self.edad() * 20
 
-    var distanciaRaton = 0
+    var distanciaRaton = 30
     method distanciaRaton() = distanciaRaton
 }
 
