@@ -35,10 +35,10 @@ object jerry {
       edad += 1
     }
 
+    method peso() = edad * 20
+
     var distanciaRaton = 30
     method distanciaRaton() = distanciaRaton
-
-    method peso() = edad * 20
 }
 
 object nibbles {
