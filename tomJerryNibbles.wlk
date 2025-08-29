@@ -1,5 +1,4 @@
 
-
 object tom {
     var energia = 50
     method energia() = energia
@@ -16,19 +15,39 @@ object tom {
       energia = energia - (distancia / 2)
       return "Tom corrió una distancia de " + distancia + " metros"
     }
+
+    method puedeCazar(raton) {
+      return energia > raton.distanciaRaton()
+    }
+
+    method cazarRaton(raton) {
+        if(self.puedeCazar(raton)){
+            self.correr(raton.distanciaRaton())
+            self.comerRaton(raton)
+        }
+    }
 }
 
 object jerry {
     var edad = 2
     method edad() = edad
+    method cumpleEdad() {
+      edad = edad + 1
+    }
+
+    var distanciaRaton = 0
+    method distanciaRaton() = distanciaRaton
 
     method peso() = edad * 20
 }
 
 object nibbles {
-  method edad() = 35
+    method edad() = 35
 
-  method peso() = self.edad() * 20
+    method peso() = self.edad() * 20
+
+    var distanciaRaton = 0
+    method distanciaRaton() = distanciaRaton
 }
 
 // Inventar otro ratón
