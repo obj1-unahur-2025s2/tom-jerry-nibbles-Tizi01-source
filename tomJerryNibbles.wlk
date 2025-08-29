@@ -8,12 +8,10 @@ object tom {
 
     method comerRaton(raton) {
       energia += (12 + raton.peso())
-      console "Tom comió a" + raton + "."
     }
 
     method correr(distancia) {
       energia -= (distancia / 2)
-      console "Tom corrió una distancia de " + distancia + " metros."
     }
 
     method puedeCazar(raton) {
